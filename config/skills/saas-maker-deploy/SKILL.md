@@ -13,7 +13,7 @@ Postgres runs on the same server as a Kamal **accessory** of the backend
 > Source of truth: the three `config/deploy.yml` files of the project and
 > https://kamal-deploy.org/docs. Read the project's files before editing; the
 > template versions are at
-> `https://raw.githubusercontent.com/SaaS-Maker-Stack/saas-maker-<backend|frontend|admin>/main/config/deploy.yml`.
+> `https://raw.githubusercontent.com/SaaS-Maker-Stack/saas-maker-<backend|frontend|admin>/v0.1.0/config/deploy.yml`.
 
 ## Prerequisites
 

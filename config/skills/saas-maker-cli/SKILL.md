@@ -117,8 +117,8 @@ missing (nothing is written in that case):
 | `frontend/src/components/layout/Sidebar.tsx` | `// generator:nav` (inside `navItems`) |
 | `frontend/src/types/api.ts` | `// generator:types` (end of file) |
 
-Projects generated before Sep 2026 add them by hand (compare with the template on
-`main`). Never move or rename them.
+Projects generated before Sep 2026 add them by hand (compare with the template at
+`v0.1.0`). Never move or rename them.
 
 ## Conventions to respect
 
