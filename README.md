@@ -44,7 +44,7 @@ npx skills add SaaS-Maker-Stack/skills --agent claude-code --skill '*' --yes
 ## Versioning
 
 Skills are versioned in lockstep with the template: the file pointers inside each skill
-pin the template release they target (currently **v0.1.0**). Install the skills release
+pin the template release they target (currently **v0.1.1**). Install the skills release
 that matches the template version you are building on.
 
 ## License

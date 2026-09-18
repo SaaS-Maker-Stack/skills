@@ -117,7 +117,7 @@ missing (nothing is written in that case):
 | `frontend/src/types/api.ts` | `// generator:types` (end of file) |
 
 Projects generated before Sep 2026 add them by hand (compare with the template at
-`v0.1.0`). Never move or rename them.
+`v0.1.1`). Never move or rename them.
 
 ## Conventions to respect
 

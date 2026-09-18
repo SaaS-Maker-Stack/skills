@@ -21,7 +21,7 @@ Every generated project ships them; read before writing code:
 - `DESIGN.md` (root) — the design system. **Read it before touching any UI.**
 
 Template source (for what a pristine file looks like):
-`https://raw.githubusercontent.com/SaaS-Maker-Stack/<backend|frontend|admin>/v0.1.0/<path>`.
+`https://raw.githubusercontent.com/SaaS-Maker-Stack/<backend|frontend|admin>/v0.1.1/<path>`.
 
 ## The three services
 
