@@ -1,0 +1,13 @@
+{
+  "name": "saas-maker-skills",
+  "version": "0.1.0",
+  "description": "Agent Skills for building, extending and deploying SaaS Maker projects",
+  "author": {
+    "name": "William Wong Garay",
+    "url": "https://github.com/SaaS-Maker-Stack"
+  },
+  "repository": "https://github.com/SaaS-Maker-Stack/skills",
+  "license": "Apache-2.0",
+  "keywords": ["saas", "multi-tenant", "fastapi", "react", "shadcn", "kamal", "agent-skills"],
+  "skills": "./config/skills/"
+}

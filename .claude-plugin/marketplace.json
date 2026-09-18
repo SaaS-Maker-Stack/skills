@@ -1,0 +1,18 @@
+{
+  "name": "saas-maker-skills",
+  "owner": {
+    "name": "SaaS Maker",
+    "email": "willywg@gmail.com"
+  },
+  "metadata": {
+    "description": "Agent Skills for building, extending and deploying SaaS Maker projects"
+  },
+  "plugins": [
+    {
+      "name": "saas-maker-skills",
+      "source": "./",
+      "description": "Teach any skills-compatible agent the SaaS Maker conventions: scaffold a multi-tenant SaaS, add a module, apply a design, deploy with Kamal.",
+      "homepage": "https://github.com/SaaS-Maker-Stack/skills"
+    }
+  ]
+}
