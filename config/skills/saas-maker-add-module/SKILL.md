@@ -12,7 +12,7 @@ It lives on the `reference/projects` branch of each repo, never on `main`, so a 
 project does not have it locally. Fetch the files from GitHub as you go.
 
 > Source of truth — read the file you are about to copy, don't reproduce it from memory.
-> Base URL: `https://raw.githubusercontent.com/SaaS-Maker-Stack/saas-maker-<backend|frontend>/reference/projects/`
+> Base URL: `https://raw.githubusercontent.com/SaaS-Maker-Stack/<backend|frontend>/reference/projects/`
 >
 > Backend: `app/models/project.py`, `app/schemas/project.py`, `app/services/project_service.py`,
 > `app/controllers/projects.py`, `alembic/versions/c3d4e5f6a7b8_add_projects_table.py`,

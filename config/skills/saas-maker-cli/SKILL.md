@@ -7,16 +7,15 @@ description: "INVOKE when using the saas-maker CLI to create or extend a SaaS Ma
 
 `saas-maker` scaffolds and extends a SaaS Maker project — *zero to a running
 multi-tenant SaaS in one command*, plus generators à la `rails generate`. Python;
-run it with `uvx` (no install). Until it reaches PyPI, run it from GitHub:
+published on PyPI; run it with `uvx` (no install):
 
 ```bash
-uvx --from git+https://github.com/SaaS-Maker-Stack/saas-maker-cli saas-maker --version
-# once published:  uvx saas-maker --version   →  "saas-maker X.Y.Z (template vX.Y.Z)"
+uvx saas-maker --version        # → "saas-maker X.Y.Z (template vX.Y.Z)"
 ```
 
 Authoritative references (read for edge cases; do not reproduce from memory):
-→ https://raw.githubusercontent.com/SaaS-Maker-Stack/saas-maker-cli/main/README.md
-→ https://raw.githubusercontent.com/SaaS-Maker-Stack/saas-maker-cli/main/AGENTS.md (internals, release ceremony)
+→ https://raw.githubusercontent.com/SaaS-Maker-Stack/cli/main/README.md
+→ https://raw.githubusercontent.com/SaaS-Maker-Stack/cli/main/AGENTS.md (internals, release ceremony)
 
 The CLI **pins a template ref** (`STACK_REF`): a given CLI version scaffolds the three
 service repos at that tag, so the version output shows both.
