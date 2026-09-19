@@ -33,11 +33,13 @@ logic:
 
 ```bash
 uvx saas-maker generate module invoice --label Factura --label-plural Facturas --feminine \
-  --fields "number:str:Número,amount:float:Monto,notes:text?:Notas,due:date?:Vence" \
+  --fields "number:str:Número,amount:money:Monto,notes:text?:Notas,due:date?:Vence" \
   --status "draft=Borrador,sent=Enviada,paid=Pagada"
 ```
 
-Kinds: `str text int float bool date datetime` (`?` = optional; the first field is the title).
+Kinds: `str text int float money bool date datetime choice(a=Label|b=Label)` (`?` = optional;
+the first field is the title). Use `money` for amounts (never `float`) and `choice` for closed
+lists that are not the row's status.
 It writes both sides, the migration on the current alembic head and the tests, and formats the
 backend with ruff. Then run the ship checklist below. Use the manual checklist when the shape
 differs from a plain CRUD (nested resources, extra endpoints, custom permissions).

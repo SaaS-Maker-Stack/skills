@@ -66,13 +66,13 @@ Run from anywhere inside the project (it walks up to find `backend/` and
 
 ```bash
 uvx saas-maker generate module invoice --label Factura --label-plural Facturas --feminine \
-  --fields "number:str:Número,amount:float:Monto,notes:text?:Notas,due:date?:Vence" \
+  --fields "number:str:Número,amount:money:Monto,kind:choice(sale=Venta|refund=Devolución):Tipo,notes:text?:Notas,due:date?:Vence" \
   --status "draft=Borrador,sent=Enviada,paid=Pagada" --icon Receipt
 ```
 
 | Option | Effect |
 |--------|--------|
-| `--fields "name:kind[?][:Label],…"` | Kinds `str text int float bool date datetime`; `?` = optional. **First field must be a required `str`**: it is the title, the searchable column and the delete confirmation. Reserved names: `id organization_id created_by created_at updated_at status q page page_size`. Default: `name:str:Nombre,description:text?:Descripción`. |
+| `--fields "name:kind[?][:Label],…"` | Kinds `str text int float money bool date datetime choice(a=Label\|b=Label)`; `?` = optional. `money` = `Numeric(14, 2)`/`Decimal` (`ge=0`), a JSON number, decimal input + formatted cell (`app/schemas/money.py` is created once). `choice` = closed list: `Literal` in the schemas, `<Select>` in the form, label in the table (`features/<plural>/choices.ts`); optional adds "Sin especificar". **First field must be a required `str`**: it is the title, the searchable column and the delete confirmation. Reserved names: `id organization_id created_by created_at updated_at status q page page_size`. Default: `name:str:Nombre,description:text?:Descripción`. |
 | `--status "value=Label,…"` | ≥2 values. Adds a `status` column (first value is the default), a list filter and a colored badge. |
 | `--label`, `--label-plural`, `--feminine` | Spanish UI copy ("Nueva factura", "Factura creada"). Without them the name is humanized. |
 | `--plural <snake>` | Override the English plural (table, prefix, route, file names). |
